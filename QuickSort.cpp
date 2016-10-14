@@ -8,13 +8,13 @@ bool quickSort(vector<int> v,vector<int>::iterator beg,vector<int>::iterator end
 {
 	int t,temp;
 	vector<int>::iterator i,j;
-
-	if(i>j)
-		return;
-
+	
 	temp = *beg;
 	i=beg;
 	j=end;
+	
+	if(i>j)
+		return;
 
 	while(i != j)
 	{
